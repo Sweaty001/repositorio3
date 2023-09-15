@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("espaco.jpg");
+    animation: translacao 10s linear infinite;
+    background-size: cover;
+}
+.globo{
+    width: 500px;
+    height: 480px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url("terra.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 20px inset rgb(212, 207, 207), 0px 0px 40px rgb(44, 44, 114), -25px -25px 25px #000 inset;
+    display: flex;
+    animation: rotacionar 15s linear infinite;
+}
+@keyframes rotacionar{
+    to{
+        background-position: -100% ;
+    }
+}
+@keyframes translacao{
+    to{
+        background-position: -150;
+    }
+    100%{
+        background-position: 99%;
+    }
+}
